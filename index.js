@@ -19,7 +19,7 @@ This should all not actually mutate the driver passed in. */
 function deleteFromDriverByKey(driver, key) {
   const newDriver = Object.assign({}, driver);
   console.log(newDriver['key']);
-  delete newDriver[key];
+  delete newDriver['key'];
 }
 
 /* this function should work the same as deleteFromDriverByKey() but it should mutate the driver passed in.
