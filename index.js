@@ -17,7 +17,6 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
 It should delete the key/value pair for the key that was passed in from the driver Object.
 This should all not actually mutate the driver passed in. */
 function deleteFromDriverByKey(driver, key) {
-  binding.pry
   const newDriver = Object.assign({}, driver);
   delete newDriver[key];
 }
