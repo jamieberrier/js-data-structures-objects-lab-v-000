@@ -25,5 +25,6 @@ function deleteFromDriverByKey(driver, key) {
 /* this function should work the same as deleteFromDriverByKey() but it should mutate the driver passed in.
 Be sure and consider whether dot-notation or bracket-notation might affect your solution. */
 function destructivelyDeleteFromDriverByKey(driver, key) {
-
+  delete driver[key];
+  return driver;
 }
